@@ -10,7 +10,7 @@ export function ResetFiltersButton() {
 
   const handleReset = () => {
     startTransition(() => {
-      router.push('/listing', { scroll: false });
+      router.push('/', { scroll: false });
     });
   };
 
