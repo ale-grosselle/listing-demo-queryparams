@@ -1,0 +1,57 @@
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.searchRow {
+  margin-bottom: 24px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    order: 1;
+  }
+
+  .main {
+    order: 0;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  top: 16px;
+}
+
+.main {
+  min-width: 0;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.resultCount {
+  font-size: 14px;
+  color: #555;
+}
+
+.resultCount strong {
+  color: #111;
+  font-size: 16px;
+}

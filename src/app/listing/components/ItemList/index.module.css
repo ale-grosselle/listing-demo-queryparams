@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.empty {
+  padding: 48px 24px;
+  text-align: center;
+  color: #666;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 10px;
+}
+
+.empty p:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.empty p {
+  font-size: 14px;
+}

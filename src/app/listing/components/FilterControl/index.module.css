@@ -1,0 +1,27 @@
+.select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #111;
+  background: #fff;
+  cursor: pointer;
+  appearance: auto;
+  transition: border-color 0.15s;
+}
+
+.select:hover:not(:disabled) {
+  border-color: #9ca3af;
+}
+
+.select:focus {
+  outline: 2px solid #c8001e;
+  outline-offset: 1px;
+  border-color: #c8001e;
+}
+
+.select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

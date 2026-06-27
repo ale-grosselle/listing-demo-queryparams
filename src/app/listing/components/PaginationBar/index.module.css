@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 16px 0 8px;
+}
+
+.page,
+.arrow {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.page:hover:not(:disabled),
+.arrow:hover:not(:disabled) {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.page:disabled,
+.arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.active {
+  background: #c8001e;
+  border-color: #c8001e;
+  color: #fff;
+  font-weight: 600;
+}
+
+.active:hover {
+  background: #a8001a !important;
+}
