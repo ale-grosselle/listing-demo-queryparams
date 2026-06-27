@@ -42,20 +42,8 @@ Back/forward navigation works for free — the browser owns the URL history.
 
 ---
 
-## File Map
+## Key Files
 
-```
-src/app/listing/
-├── page.tsx                    # Server Component — fetches data, composes page
-├── api/
-│   ├── fetchListings.ts        # React.cache() — filters + paginates
-│   └── fetchFiltersConfig.ts   # React.cache() — config per category
-└── components/
-    ├── FilterControl/          # Client — select → router.push
-    ├── RemoveFilterButton/     # Client — removes one filter
-    ├── ResetFiltersButton/     # Client — clears all filters
-    ├── SearchBar/              # Client — free-text → router.push
-    ├── SortSelector/           # Client — sort → router.push
-    ├── PaginationBar/          # Client — page → router.push
-    └── ListingAnalytics/       # Client — fires window.dataLayer event
-```
+- **Filters** — [`FilterControl/index.tsx`](src/app/listing/components/FilterControl/index.tsx), [`RemoveFilterButton/index.tsx`](src/app/listing/components/RemoveFilterButton/index.tsx), [`ResetFiltersButton/index.tsx`](src/app/listing/components/ResetFiltersButton/index.tsx)
+- **Pagination** — [`PaginationBar/index.tsx`](src/app/listing/components/PaginationBar/index.tsx)
+- **Google Tag Manager** — [`ListingAnalytics/index.tsx`](src/app/listing/components/ListingAnalytics/index.tsx)
